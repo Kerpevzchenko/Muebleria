@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    float: left;
+}
+
+.menu{
+    margin: 0;
+    padding: 1px;
+    height: auto;
+    background-color: #A8EFA4;
+}
+.menu li{
+    display: inline;
+}
+.button{
+    font-family: Arial;
+    font-size: 1.2em;
+    font-style: none;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+}
+.button:link{
+    background-color: #A8EFA4;
+    color: black;
+}
+.button:hover{
+    /* background-color: #c6ecc4;*/
+    color: black;
+} 
+
+.Logo1{
+    max-width: 20%;
+    height: auto;
+}
+.space{
+    padding-left: 48%;
+}
+
+
+.container{
+    padding-top: 1rem;
+}
+
+.Divide{
+    display: inline-flex;
+}
+
+.HeadTop{
+    padding-top: 5rem;
+}
+.HeadTop > img{
+    max-height: 300px;
+    width: auto;
+}
+
+.Titulo{
+    font-size: clamp(1vw, 120px, 200px);
+    color: black;
+    font-weight: bold;
+    text-align: left;
+
+    background: #A8EFA4;
+    border-radius: 5%;
+    padding-left: 1rem;
+
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.Titulo + img{
+    padding-left: 5rem;
+}
+
+.btn{
+    background-color: #A8EFA4;
+    font-weight: bold;
+    display: inline-flex;
+    border: none;
+}
+.btn > a{
+    text-decoration: none;
+    color: black;
+}
+
+/* h3 span {
+    background-color: #A8EFA4;
+    border-radius: 5%;
+    padding-right: 50%;
+    overflow: hidden;
+} */
+
+h3.GreenH{
+    display: table;
+    padding: 5px;
+    background-color: #A8EFA4;
+    border-radius: 2.5%;
+}
+
+.Subtitle{
+    display: table; /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto; /* keep the table centered */
+    padding:5px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #A8EFA4;
+}
+
+.greenbox{
+    padding: 7%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    /*
+    border-style: solid;
+    border-color: white;
+    --width: 15px;
+    border-right-width: var(--width);
+    border-left-width: var(--width); */
+}
+.greenbox > span{
+    display: table;
+    background-color: #A8EFA4;
+    padding: 5px;
+}
+
+.right{
+    text-align: right;
+}
+.center{
+    text-align: center;
+}
+.italics{
+    font-style: italic;
+}
+
+.contact_form{
+    display: table;
+}
+.form-control{
+    border-color: #A8EFA4;
+}
+.botoncito{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5%;
+    
+}
+
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
