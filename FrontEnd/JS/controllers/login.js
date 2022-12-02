@@ -51,10 +51,19 @@ $("#btnReg").click(function () {
     data,
     dataType: "json",
     success: function (data, status, req) {
-      console.log(data);
+      //console.log(data);
+      $(alertCrear).removeClass("collapse");
+      $(alertCrear).addClass("alert-success");
+      $(alertCrear).text("Usuario creado exitosamente");
+
+      $("#correoCrear").val("");
+      $("#contrasena1").val("");
+      $("#nombre").val("");
     },
     error: function (req, status, e) {
-      console.log(req);
+      $(alertCrear).removeClass("collapse");
+      $(alertCrear).addClass("alert-danger");
+      $(alertCrear).text("No se pudo crear el usuario");
     },
   });
 });
