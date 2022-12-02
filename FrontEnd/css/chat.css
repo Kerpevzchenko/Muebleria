@@ -1,0 +1,68 @@
+#BarraLateral{
+    background-color: rgb(212, 215, 215);
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+#Chats{
+    padding-top: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+#BarraLateral{
+    width: 25rem;
+}
+#Chats{
+    padding: 15px;
+    margin: 0px;
+    width: auto;
+    height: 100vh;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+ul#Chats>li:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+#Chating{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#Chating > #send_container{
+    margin-top: auto;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+
+
+    background-color: rgb(212, 215, 215);
+    border-top: solid;
+    border-width: 2px;
+    border-top-color: black;
+
+    display: flexbox;
+}
+#Chating > #send_container > text{
+    width: auto;
+}
+
+#message-container {
+    width: 80%;
+    max-width: 1200px;
+}
+#message-container div {
+    background-color: #ccc;
+    padding: 5px;
+}
+
+#message-container div:nth-child(2n) {
+    background-color: #FFF;
+}

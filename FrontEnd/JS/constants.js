@@ -1,1 +1,1 @@
-export const domain = "turdine-weld.000webhostapp.com";
+export const domain = "https://turdine-weld.000webhostapp.com";

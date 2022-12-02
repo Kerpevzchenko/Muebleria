@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+   <!-- Mis cosas -->
+   <link rel="stylesheet" type="text/css" href="css/styleLogin.css">
+   <link rel="icon" type="image/png" href="Images/Logo2.png">
+  <title>LOGIN - REGISTRO</title>
+  <script src="./JS/jquery-3.6.1.min.js"></script>
+</head>
+    
+<body>        
+    <div id="ContenidoCentral">
+        <div id="BarraLateral" style="background-color:#A8EFA4;">
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <img style=" height:auto;  width:auto; " src="Images/Logo2.png" class="img-fluid">
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+
+        <div id="Login" class="container">
+            <div class="container">
+                <div class="well">
+                    <div class="media">
+                        <div class="media-body">
+                            <br />
+                            <h1 class="media-heading" style=" text-align: center; font-size: 70px; color:black;">
+                                Iniciar Sesión
+                            </h1>
+                            <center>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <p class="col-lg-2"> </p>
+                                        <input class="col-lg-8" type="text" id="correoIniciar" placeholder="correo">
+                                        <p class="col-lg-2"> </p>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <p class="col-lg-2"> </p>
+                                        <input class="col-lg-8" type="text" id="contrasena" placeholder="contraseña">
+                                        <p class="col-lg-2"> </p>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <p class="col-lg-5"> </p>
+                                        <button class="col-lg-2" id="btnLogin">
+                                            Entrar
+                                        </button>
+                                        <p class="col-lg-5"> </p>
+                                    </div>
+                                </div>
+                                <br /><br /><br />
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <p class="col-lg-5"> </p>
+                                        <p class="col-lg-2" style="color:black"> - o - </p>
+                                        <p class="col-lg-5"> </p>
+                                    </div>
+                                </div>
+                                <br /><br />
+                                
+                            </center>
+                            <h1 class="media-heading" style=" text-align: center; font-size: 70px; color:black;">
+                                Crear Cuenta
+                            </h1>
+                            <center>
+                                <div class="row">
+                                    <p class="col-lg-2"> </p>
+                                    <input class="col-lg-8" type="text" id="nombre" placeholder="Nombre(s)">
+                                    <p class="col-lg-2"> </p>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <p class="col-lg-2"> </p>
+                                    <input class="col-lg-8" type="text" id="apellidos" placeholder="Apellidos">
+                                    <p class="col-lg-2"> </p>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <p class="col-lg-2"> </p>
+                                    <input class="col-lg-8" type="text" id="correoCrear" placeholder="Correo">
+                                    <p class="col-lg-2"> </p>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <p class="col-lg-2"> </p>
+                                    <input class="col-lg-8" type="text" id="nomUs" placeholder="Nombre de Usuario">
+                                    <p class="col-lg-2"> </p>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <p class="col-lg-2"> </p>
+                                    <input class="col-lg-8" type="text" id="contrasena1" placeholder="Contraseña">
+                                    <p class="col-lg-2"> </p>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <p class="col-lg-2"> </p>
+                                    <input class="col-lg-8" type="text" id="contrasena2" placeholder="Contraseña">
+                                    <p class="col-lg-2"> </p>
+                                </div>
+                                
+                                <br />
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <p class="col-lg-5"> </p>
+                                        <button class="col-lg-2" id="btnReg">
+                                            Crear Cuenta
+                                        </button>
+                                        <p class="col-lg-5"> </p>
+                                    </div>
+                                </div>
+                                <br />
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./JS/controllers/login.js"></script>
+</body>
+    
+</html>

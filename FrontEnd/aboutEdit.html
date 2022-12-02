@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+ 
+    <!-- Mis cosas -->
+    <link rel="stylesheet" type="text/css" href="css/StyleMenu.css">
+    <link rel="stylesheet" type="text/css" href="css/display.css">
+    <script src="JS/display.js" defer></script>
+
+    <link rel="icon" type="image/png" href="Images/Logo2.png">
+   <title>MUEBLERIA SUSTENTABLE</title>
+</head>
+<body>
+    <nav>
+      <ul class="menu" >
+          <li><img class="Logo1" src="Images/Logo 1.png"></li>
+          <li><a class="arrow" href="index.html">🡨</a></li> <!-- Idea 1, poner la flecha en un div afuera -->
+      </ul>
+    </nav>
+
+    <br><br><br>
+
+    <div class="container" style="padding: 50px;">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+            <section aria-label="Fotos">
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="Images/Logo2.png" alt="Imagen 1">
+                    </li>
+                    <li class="slide">
+                        <img src="Images/Logo 1.png" alt="Imagen 1">
+                    </li>
+                    <li class="slide">
+                        <img src="Images/Home.png" alt="Imagen 1">
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <center>
+            <form method="post" enctype="multipart/form-data">
+                <input class="btn" type="file" name="userfile[]" multiple="">
+                <input class="col-lg-12" type="text" id="nombre" placeholder="Nombre del producto">
+                <textarea class="col-lg-12"  id="Descripcion" rows="20" placeholder="Descripcion del producto"></textarea>
+                <input class="btn" type="submit" value="Publicar">
+            </form>
+        </center>
+        
+    </div>
+    
+</body>
+</html>

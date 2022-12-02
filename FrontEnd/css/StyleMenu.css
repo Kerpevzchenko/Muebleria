@@ -176,3 +176,8 @@ nav{
 .btn + .btn{
     margin-left: .25rem;
 }
+
+
+.SearchBar{
+    padding-left: 40%;
+}
