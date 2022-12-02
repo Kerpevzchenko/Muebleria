@@ -1,21 +1,38 @@
 import { domain } from "../constants.js";
 
+var alertIniciar;
+var alertCrear;
+
 $(document).ready(function () {
   btnLogin = $("#btnLogin")[0];
   btnReg = $("#btnReg")[0];
+
+  alertIniciar = $("#iniciar-alert")[0];
+  $(alertIniciar).addClass("collapse");
+
+  alertCrear = $("#crear-alert")[0];
+  $(alertCrear).addClass("collapse");
 });
 
 $("#btnLogin").click(function () {
   let correo = $("#correoIniciar").val();
   let contraseña = $("#contrasena").val();
 
-  $.ajax(`${domain}/LogIn?correo=${correo}&contraseña=${contraseña}`, {
+  let data = { correo, contraseña };
+
+  $.ajax(`${domain}/LogIn`, {
+    method: "POST",
+    data,
     dataType: "json",
     success: function (data, status, req) {
       console.log(data);
+      window.location = "/";
     },
     error: function (req, status, e) {
       console.log(status);
+      $(alertIniciar).removeClass("collapse");
+      $(alertIniciar).addClass("alert-danger");
+      $(alertIniciar).text("Correo y/o contraseña incorrectos");
     },
   });
 });
